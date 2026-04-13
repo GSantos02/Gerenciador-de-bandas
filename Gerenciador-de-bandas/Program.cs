@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 using System.Threading;
 // Programa para cadastrar e listar bandas prediletas
 
@@ -46,10 +47,11 @@ void ListarBandas() // Função para listar as bandas cadastradas
     Console.Clear();
     Console.WriteLine("Bandas cadastradas:");
 
-    foreach (var banda in bandasRegistradas)
+    for (int i = 0; i < bandasRegistradas.Count; i++)
     {
-        Console.WriteLine($"- {banda}");
+        Console.WriteLine($"{i + 1}. {bandasRegistradas[i]}");
     }
+
     Console.WriteLine("\nPressione qualquer tecla para voltar ao menu...");
     Console.ReadKey();
 }
