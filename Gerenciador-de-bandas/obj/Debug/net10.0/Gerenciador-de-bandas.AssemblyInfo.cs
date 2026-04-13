@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gerenciador-de-bandas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d55f266a0dbce1ac5ee62e06382eefb5a83afd1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2732c23e58565cb2aa4b641ae55787c10b93b2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gerenciador-de-bandas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gerenciador-de-bandas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

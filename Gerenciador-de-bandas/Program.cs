@@ -7,12 +7,12 @@ List<string> bandasRegistradas = new List<string>(); // Lista para armazenar as 
 void Menu()
 {
     Console.Clear(); // Limpa a tela para exibir o menu
-    Console.WriteLine("1. Cadastrar banda");
-    Console.WriteLine("2. Listar bandas");
-    Console.WriteLine("3. Sair");
+    Console.WriteLine("1.Cadastrar banda");
+    Console.WriteLine("2.Listar bandas");
+    Console.WriteLine("3.Sair");
 
     Console.Write("\nEscolha uma opção: ");
-    int opcoes = int.Parse(Console.ReadLine()!); // Lê a opção escolhida pelo usuário
+    int opcoes = int.TryParse(Console.ReadLine()!, out int resultado) ? resultado : 0; // Lê a opção escolhida pelo usuário e converte para inteiro, caso seja inválida, atribui 0
 
     switch (opcoes) // Verifica a opção escolhida e executa a ação correspondente
     {
