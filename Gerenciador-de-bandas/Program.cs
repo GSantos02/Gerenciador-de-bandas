@@ -3,18 +3,18 @@ using System.ComponentModel.Design;
 using System.Threading;
 // Programa para cadastrar e listar bandas prediletas
 
-List<string> bandasRegistradas = new List<string>(); // Lista para armazenar as bandas cadastradas
+List<string> bandasRegistradas = new List<string>(); 
 void Menu()
 {
-    Console.Clear(); // Limpa a tela para exibir o menu
+    Console.Clear(); 
     Console.WriteLine("1.Cadastrar banda");
     Console.WriteLine("2.Listar bandas");
     Console.WriteLine("3.Sair");
 
     Console.Write("\nEscolha uma opção: ");
-    int opcoes = int.TryParse(Console.ReadLine()!, out int resultado) ? resultado : 0; // Lê a opção escolhida pelo usuário e converte para inteiro, caso seja inválida, atribui 0
+    int opcoes = int.TryParse(Console.ReadLine()!, out int resultado) ? resultado : 0; 
 
-    switch (opcoes) // Verifica a opção escolhida e executa a ação correspondente
+    switch (opcoes) 
     {
         case 1:
             CadastrarBanda();
@@ -26,13 +26,13 @@ void Menu()
             Console.WriteLine("Saindo...");
             Environment.Exit(0);
             break;
-        default: // Caso a opção seja inválida, exibe uma mensagem de erro
+        default: 
             Console.WriteLine("Opção inválida. Tente novamente.");
             break;
     }
 }
 
-void CadastrarBanda() // Função para cadastrar uma nova banda
+void CadastrarBanda() 
 {
     Console.Clear();
     Console.Write("Digite o nome da banda: ");
@@ -42,7 +42,7 @@ void CadastrarBanda() // Função para cadastrar uma nova banda
     Thread.Sleep(1000);
 }
 
-void ListarBandas() // Função para listar as bandas cadastradas
+void ListarBandas() 
 {
     Console.Clear();
     Console.WriteLine("Bandas cadastradas:");
@@ -55,7 +55,7 @@ void ListarBandas() // Função para listar as bandas cadastradas
     Console.WriteLine("\nPressione qualquer tecla para voltar ao menu...");
     Console.ReadKey();
 }
-while (true) // Loop infinito para manter o programa em execução até que o usuário escolha sair
+while (true) 
 {
     Menu();
 }
